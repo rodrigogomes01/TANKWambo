@@ -10559,7 +10559,7 @@ GameObject:
   - component: {fileID: 1285989161}
   - component: {fileID: 1285989170}
   m_Layer: 0
-  m_Name: Rambo
+  m_Name: _T_Rambo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

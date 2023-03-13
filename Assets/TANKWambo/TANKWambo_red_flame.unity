@@ -588,7 +588,7 @@ GameObject:
   - component: {fileID: 537523218}
   - component: {fileID: 537523227}
   m_Layer: 0
-  m_Name: Red Flame
+  m_Name: _T_Red_Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
