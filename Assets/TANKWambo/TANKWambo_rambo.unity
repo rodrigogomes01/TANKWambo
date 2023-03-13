@@ -10625,7 +10625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showInfo: 1
   _explanation: "When a collision with a bounding volume with tags [Bullet,Explosion]
-    starts:\n First, \n          destroys this object\n          plays sound explosion_sound
+    starts:\n          destroys this object\n          plays sound explosion_sound
     at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
@@ -10775,7 +10775,7 @@ SpriteRenderer:
   m_SortingLayerID: 5103727
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3001d5137f70e0741b5ab3335d47eab2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a9d72c30cbae84f4b901255c66214ccc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14231,17 +14231,19 @@ MonoBehaviour:
   actionTags: []
   hasConditions: 0
   actionConditions:
-  - valueHandler: {fileID: 0}
+  - negate: 0
+    valueHandler: {fileID: 0}
     variable: {fileID: 0}
     valueType: 0
     tag: {fileID: 0}
     sourceTransform: {fileID: 0}
     rigidBody: {fileID: 0}
     axis: 0
+    probe: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
-  prefabObject: {fileID: 1804719917935608223, guid: 6ca5a608fd3ab6c45b3d0f322d6d4a4e, type: 3}
+  prefabObject: {fileID: 1804719917935608223, guid: 3ae40fd9dd4e5ee4ea20c610818fdc85, type: 3}
   spawnPosition: 2
   targetPosition: {fileID: 884130083}
   targetTag: {fileID: 11400000, guid: 754dfd693c5604158853a531c7936935, type: 2}
@@ -14259,8 +14261,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "Every 5 seconds, trigger the actions::\n First, \n          spawns
-    prefab FW_ Bullets at the position of Bullet Spawner\n          plays sound shoot_sound
+  _explanation: "Every 5 seconds, trigger the actions::\n          spawns prefab
+    FW_ Bullets at the position of Bullet Spawner\n          plays sound shoot_sound
     at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
@@ -14315,7 +14317,7 @@ SpriteRenderer:
   m_SortingLayerID: 5103727
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 0429fb839dd1ef1439aefb3bb2e8af44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c707b70f0bfa68147ba4a0da414fd8b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1
@@ -14477,17 +14479,19 @@ MonoBehaviour:
   actionTags: []
   hasConditions: 0
   actionConditions:
-  - valueHandler: {fileID: 0}
+  - negate: 0
+    valueHandler: {fileID: 0}
     variable: {fileID: 0}
     valueType: 0
     tag: {fileID: 0}
     sourceTransform: {fileID: 0}
     rigidBody: {fileID: 0}
     axis: 0
+    probe: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
-  prefabObject: {fileID: 1804719917935608223, guid: 6ca5a608fd3ab6c45b3d0f322d6d4a4e, type: 3}
+  prefabObject: {fileID: 1804719917935608223, guid: 3ae40fd9dd4e5ee4ea20c610818fdc85, type: 3}
   spawnPosition: 2
   targetPosition: {fileID: 71497589}
   targetTag: {fileID: 11400000, guid: 754dfd693c5604158853a531c7936935, type: 2}
@@ -14505,8 +14509,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "Every 5 seconds, trigger the actions::\n First, \n          spawns
-    prefab FW_ Bullets at the position of Bullet Spawner\n          plays sound shoot_sound
+  _explanation: "Every 5 seconds, trigger the actions::\n          spawns prefab
+    FW_ Bullets at the position of Bullet Spawner\n          plays sound shoot_sound
     at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
@@ -14561,7 +14565,7 @@ SpriteRenderer:
   m_SortingLayerID: 5103727
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 0429fb839dd1ef1439aefb3bb2e8af44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c707b70f0bfa68147ba4a0da414fd8b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1
@@ -14879,13 +14883,15 @@ MonoBehaviour:
   actionTags: []
   hasConditions: 0
   actionConditions:
-  - valueHandler: {fileID: 0}
+  - negate: 0
+    valueHandler: {fileID: 0}
     variable: {fileID: 0}
     valueType: 0
     tag: {fileID: 0}
     sourceTransform: {fileID: 0}
     rigidBody: {fileID: 0}
     axis: 0
+    probe: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
@@ -14907,9 +14913,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "Every [0,1] seconds, trigger the actions::\n First, \n         
-    spawns prefab _B_Default at the position of Bullet Spawner\n          plays sound
-    shoot_sound at volume 1 and at pitch 1\n"
+  _explanation: "Every [0,1] seconds, trigger the actions::\n          spawns prefab
+    _B_Default at the position of Bullet Spawner\n          plays sound shoot_sound
+    at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -14963,7 +14969,7 @@ SpriteRenderer:
   m_SortingLayerID: 5103727
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: e09b1c31978d35541a125d4a3b473598, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1c0b308abdab67049bab0d1d49f069c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1

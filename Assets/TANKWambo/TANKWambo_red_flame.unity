@@ -400,17 +400,19 @@ MonoBehaviour:
   actionTags: []
   hasConditions: 0
   actionConditions:
-  - valueHandler: {fileID: 0}
+  - negate: 0
+    valueHandler: {fileID: 0}
     variable: {fileID: 0}
     valueType: 0
     tag: {fileID: 0}
     sourceTransform: {fileID: 0}
     rigidBody: {fileID: 0}
     axis: 0
+    probe: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
-  prefabObject: {fileID: 7055611422271798998, guid: e23d5016f476cb54f8951791563724bd, type: 3}
+  prefabObject: {fileID: 7055611422271798998, guid: 26743cee5652af846a21b06f509e6d96, type: 3}
   spawnPosition: 2
   targetPosition: {fileID: 1550065968}
   targetTag: {fileID: 11400000, guid: 754dfd693c5604158853a531c7936935, type: 2}
@@ -428,9 +430,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "Every [0,10] seconds, trigger the actions::\n First, \n         
-    spawns an entity using spawner, but there's no spawner in object!\n         
-    plays sound shoot_sound at volume 1 and at pitch 1\n"
+  _explanation: "Every [0,10] seconds, trigger the actions::\n          spawns prefab
+    Cannon_ Bullets at the position of Bullet Spawner\n          plays sound shoot_sound
+    at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -484,7 +486,7 @@ SpriteRenderer:
   m_SortingLayerID: 5103727
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: c19de2ad3bfed064b8fc47508533b6b7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6028343eef5834c4a85ea1206a6619b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1
@@ -652,7 +654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showInfo: 1
   _explanation: "When a collision with a bounding volume with tags [Bullet,Explosion]
-    starts:\n First, \n          destroys this object\n          plays sound explosion_sound
+    starts:\n          destroys this object\n          plays sound explosion_sound
     at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
@@ -802,7 +804,7 @@ SpriteRenderer:
   m_SortingLayerID: 5103727
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 221fdcc838ee9a24a9acbc32b5e1c458, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 299159105b4bac247a83c0b788d7befd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10877,17 +10879,19 @@ MonoBehaviour:
   actionTags: []
   hasConditions: 0
   actionConditions:
-  - valueHandler: {fileID: 0}
+  - negate: 0
+    valueHandler: {fileID: 0}
     variable: {fileID: 0}
     valueType: 0
     tag: {fileID: 0}
     sourceTransform: {fileID: 0}
     rigidBody: {fileID: 0}
     axis: 0
+    probe: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
-  prefabObject: {fileID: 7055611422271798998, guid: e23d5016f476cb54f8951791563724bd, type: 3}
+  prefabObject: {fileID: 7055611422271798998, guid: 26743cee5652af846a21b06f509e6d96, type: 3}
   spawnPosition: 2
   targetPosition: {fileID: 769222066}
   targetTag: {fileID: 11400000, guid: 754dfd693c5604158853a531c7936935, type: 2}
@@ -10905,9 +10909,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "Every [0,10] seconds, trigger the actions::\n First, \n         
-    spawns an entity using spawner, but there's no spawner in object!\n         
-    plays sound shoot_sound at volume 1 and at pitch 1\n"
+  _explanation: "Every [0,10] seconds, trigger the actions::\n          spawns prefab
+    Cannon_ Bullets at the position of Bullet Spawner\n          plays sound shoot_sound
+    at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -10961,7 +10965,7 @@ SpriteRenderer:
   m_SortingLayerID: 5103727
   m_SortingLayer: 3
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 006c8bade3d02034c9225a56fcceb628, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0bb2d22cab4964c4db88972a391b244b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 1
