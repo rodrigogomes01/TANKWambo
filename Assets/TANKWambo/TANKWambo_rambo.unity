@@ -186,8 +186,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showInfo: 1
   _explanation: "Reset game when player is killed. Trigger is called from player
-    collision.\n----------------\nEvery [0,5,5] seconds, trigger the actions::\nFirst,
-    \n           switches to scene TANKWambo_test\n"
+    collision.\n----------------\nEvery [0,5,5] seconds, trigger the actions::\n          
+    switches to scene TANKWambo_test\n"
   description: Reset game when player is killed. Trigger is called from player collision.
   enableTrigger: 0
   allowRetrigger: 1
@@ -10553,11 +10553,11 @@ GameObject:
   - component: {fileID: 1285989167}
   - component: {fileID: 1285989166}
   - component: {fileID: 1285989165}
-  - component: {fileID: 1285989164}
   - component: {fileID: 1285989163}
   - component: {fileID: 1285989162}
   - component: {fileID: 1285989161}
   - component: {fileID: 1285989170}
+  - component: {fileID: 1285989171}
   m_Layer: 0
   m_Name: _T_Rambo
   m_TagString: Untagged
@@ -10642,43 +10642,6 @@ MonoBehaviour:
   tags:
   - {fileID: 11400000, guid: 5dd3ea1295091a146a4601c96116d46b, type: 2}
   - {fileID: 11400000, guid: 7b6614cbd7549a4409447c67edf9f5f0, type: 2}
---- !u!114 &1285989164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1285989160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea683d36c47ccf34683c3029d2ae80df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _showInfo: 1
-  _explanation: 'No movement!
-
-    This object will turn 360 degrees/sec to align
-    it''s up axis to the movement direction.
-
-'
-  description: 
-  speed: {x: 0, y: 0}
-  useRotation: 0
-  turnToDirection: 1
-  axisToAlign: 0
-  maxTurnSpeed: 360
-  inputEnabled: 0
-  inputType: 0
-  horizontalAxis: Horizontal
-  verticalAxis: Vertical
-  horizontalButtonPositive: Right
-  horizontalButtonNegative: Left
-  verticalButtonPositive: Up
-  verticalButtonNegative: Down
-  horizontalKeyPositive: 275
-  horizontalKeyNegative: 276
-  verticalKeyPositive: 273
-  verticalKeyNegative: 274
 --- !u!114 &1285989165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10845,6 +10808,26 @@ MonoBehaviour:
   targetTag: {fileID: 11400000, guid: 1e7c9d7a9c88a3b41bc3a78e56999984, type: 2}
   cameraObject: {fileID: 0}
   cameraTag: {fileID: 0}
+--- !u!114 &1285989171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285989160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c84ea3f6d61de144eb7d72234be6e843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showInfo: 1
+  _explanation: 'Single axis movement towards the Up axis of the object, at 5 units
+    per second.
+
+'
+  description: 
+  axis: 0
+  speed: 5
 --- !u!1 &1291626511
 GameObject:
   m_ObjectHideFlags: 0
@@ -14262,8 +14245,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showInfo: 1
   _explanation: "Every 5 seconds, trigger the actions::\n          spawns prefab
-    FW_ Bullets at the position of Bullet Spawner\n          plays sound shoot_sound
-    at volume 1 and at pitch 1\n"
+    _Fire_Weapon_ Bullet at the position of Bullet Spawner\n          plays sound
+    shoot_sound at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
